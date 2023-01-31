@@ -5,6 +5,7 @@
  - Efetua login em um sistema web;
  - Baixa todos os relatórios mensais de um fornecedor específico;
  - Gera um relatório anual;
+ - Armazena os dados gerados;
  - Efetua logout do sistema;
  
  
