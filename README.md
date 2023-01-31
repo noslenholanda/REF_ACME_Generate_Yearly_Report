@@ -32,6 +32,6 @@ Criar um fluxo de trabalho que:
 
  Os requisitos para a execução deste robô são:
 
-- Ter o navegador Google Chrome instalado;
+- Ter o navegador Google Chrome instalado; 
 - Ter a extensão UiPath Automation para guias anônimas ativada;
 - Ajustar arquivo de configuração 'Data\Config.xlsx' conforme os parâmetros do usuário;
