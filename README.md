@@ -1,40 +1,36 @@
-### Documentation is included in the Documentation folder ###
+## Descrição:
 
-[REFrameWork Documentation](https://github.com/UiPath/ReFrameWork/blob/master/Documentation/REFramework%20documentation.pdf)
+ Este projeto tem como finalidade executar um robô de forma assistida utilizando o UiPath Studio.
+ 
+ - Efetua login em um sistema web;
+ - Baixa todos os relatórios mensais de um fornecedor específico e gera um relatório anual;
+ - Efetua logout do sistema;
+ 
+ 
+## Instruções:
 
-### REFrameWork Template ###
-**Robotic Enterprise Framework**
+Criar um fluxo de trabalho que: 
+ - Efetua login no sistema web Acme;
+ - Reseta os dados de teste do sistema;
+ - Navega até a página "Work Items";
+ - Extrai toda a tabela e filtra ("Type=WI4","Status=Open");
+ - Insere os dados filtrados em fila do Orquestrador;
+ - Para cada atividade do tipo WI4 executa os seguintes passos:
+	   - Abre a página 'Detalhes' da atividade selecionada para recuperar o ID fiscal do fornecedor;
+	   - Volta para o Dashboard e acessa a seção 'Download Monthly Report' no menu 'Reports';
+	   - Preenche o ID fiscal do fornecedor, baixa todos os relatórios mensais correspondentes para 2022;
+	   - Agrupa todos os relatórios mensais baixados em um único relatório anual do Excel;
+	   - Carrega o relatório anual do Excel resultante na seção "Carregar relatório anual" no menu Relatórios;
+	   - Preenche o Vendor TaxID, define o ano como 2022 e seleciona o arquivo em seu disco rígido. Isso retornará um ID de upload exclusivo;
+	   - Volta para a página 'Detalhes do item' de trabalho e seleciona 'Atualizar item de trabalho';
+	   - Define o status como "Concluído";    
+	   - Continua com a próxima atividade WI4;    
+- Encerra o sistema web Acme;
 
-* Built on top of *Transactional Business Process* template
-* Uses *State Machine* layout for the phases of automation project
-* Offers high level logging, exception handling and recovery
-* Keeps external settings in *Config.xlsx* file and Orchestrator assets
-* Pulls credentials from Orchestrator assets and *Windows Credential Manager*
-* Gets transaction data from Orchestrator queue and updates back status
-* Takes screenshots in case of system exceptions
+## Requisitos:
 
+ Os requisitos para a execução deste robô são:
 
-### How It Works ###
-
-1. **INITIALIZE PROCESS**
- + ./Framework/*InitiAllSettings* - Load configuration data from Config.xlsx file and from assets
- + ./Framework/*GetAppCredential* - Retrieve credentials from Orchestrator assets or local Windows Credential Manager
- + ./Framework/*InitiAllApplications* - Open and login to applications used throughout the process
-
-2. **GET TRANSACTION DATA**
- + ./Framework/*GetTransactionData* - Fetches transactions from an Orchestrator queue defined by Config("OrchestratorQueueName") or any other configured data source
-
-3. **PROCESS TRANSACTION**
- + *Process* - Process trasaction and invoke other workflows related to the process being automated 
- + ./Framework/*SetTransactionStatus* - Updates the status of the processed transaction (Orchestrator transactions by default): Success, Business Rule Exception or System Exception
-
-4. **END PROCESS**
- + ./Framework/*CloseAllApplications* - Logs out and closes applications used throughout the process
-
-
-### For New Project ###
-
-1. Check the Config.xlsx file and add/customize any required fields and values
-2. Implement InitiAllApplications.xaml and CloseAllApplicatoins.xaml workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData.xaml and SetTransactionStatus.xaml according to the transaction type being used (Orchestrator queues by default)
-4. Implement Process.xaml workflow and invoke other workflows related to the process being automated
+- Ter o navegador Google Chrome instalado;
+- Ter a extensão UiPath Automation para guias anônimas ativada;
+- Ajustar arquivo de configuração 'Data\Config.xlsx' conforme os parâmetros do usuário;
