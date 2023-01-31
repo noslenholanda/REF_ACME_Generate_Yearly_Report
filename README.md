@@ -15,7 +15,7 @@ Criar um fluxo de trabalho que:
  - Efetua login no sistema web Acme;
  - Reseta os dados de teste do sistema;
  - Navega até a página "Work Items";
- - Extrai todos os dados;
+ - Extrai dados e filtra por coluna (Type=WI4,Status=Open)
  - Insere os dados filtrados em fila do Orquestrador;
  - Para cada atividade do tipo WI4 executa os seguintes passos:
   - Abre a página 'Detalhes' da atividade selecionada para recuperar o ID fiscal do fornecedor;
