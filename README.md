@@ -3,7 +3,8 @@
  Este projeto tem como finalidade executar um robô de forma assistida utilizando o UiPath Studio.
  
  - Efetua login em um sistema web;
- - Baixa todos os relatórios mensais de um fornecedor específico e gera um relatório anual;
+ - Baixa todos os relatórios mensais de um fornecedor específico;
+ - Gera um relatório anual;
  - Efetua logout do sistema;
  
  
