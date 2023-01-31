@@ -17,16 +17,16 @@ Criar um fluxo de trabalho que:
  - Extrai toda a tabela e filtra ("Type=WI4","Status=Open");
  - Insere os dados filtrados em fila do Orquestrador;
  - Para cada atividade do tipo WI4 executa os seguintes passos:
-	   - Abre a página 'Detalhes' da atividade selecionada para recuperar o ID fiscal do fornecedor;
-	   - Volta para o Dashboard e acessa a seção 'Download Monthly Report' no menu 'Reports';
-	   - Preenche o ID fiscal do fornecedor, baixa todos os relatórios mensais correspondentes para 2022;
-	   - Agrupa todos os relatórios mensais baixados em um único relatório anual do Excel;
-	   - Carrega o relatório anual do Excel resultante na seção "Carregar relatório anual" no menu Relatórios;
-	   - Preenche o Vendor TaxID, define o ano como 2022 e seleciona o arquivo em seu disco rígido. Isso retornará um ID de upload exclusivo;
-	   - Volta para a página 'Detalhes do item' de trabalho e seleciona 'Atualizar item de trabalho';
-	   - Define o status como "Concluído";    
-	   - Continua com a próxima atividade WI4;    
-- Encerra o sistema web Acme;
+  - Abre a página 'Detalhes' da atividade selecionada para recuperar o ID fiscal do fornecedor;
+  - Volta para o Dashboard e acessa a seção 'Download Monthly Report' no menu 'Reports';
+  - Preenche o ID fiscal do fornecedor, baixa todos os relatórios mensais correspondentes para 2022;
+  - Agrupa todos os relatórios mensais baixados em um único relatório anual do Excel;
+  - Carrega o relatório anual do Excel resultante na seção "Carregar relatório anual" no menu Relatórios;
+  - Preenche o Vendor TaxID, define o ano como 2022 e seleciona o arquivo em seu disco rígido. Isso retornará um ID de upload exclusivo;
+  - Volta para a página 'Detalhes do item' de trabalho e seleciona 'Atualizar item de trabalho';
+  - Define o status como "Concluído";    
+  - Continua com a próxima atividade WI4;    
+ - Encerra o sistema web Acme;
 
 ## Requisitos:
 
