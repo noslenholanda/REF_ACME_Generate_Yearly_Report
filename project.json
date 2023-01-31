@@ -1,8 +1,9 @@
 {
-  "name": "rpa-template",
-  "description": "TesteGit",
+  "name": "REF_ACME_Generate_Yearly_Report",
+  "description": "- Baixa todos os relatórios mensais de um fornecedor específico e\r\ngera um relatório anual;",
   "main": "Main.xaml",
   "dependencies": {
+    "RPAToolkit": "[1.1.8]",
     "UiPath.Excel.Activities": "[2.16.0]",
     "UiPath.System.Activities": "[22.10.3]",
     "UiPath.Testing.Activities": "[22.10.0]",
