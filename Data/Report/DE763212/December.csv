@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+954777,"IT Support",51601,10320.2,61921.2,CAD,2017-12-15
+902944,"Professional Services",220355,44071,264426,RON,2017-12-01
+987825,"Professional Services",256369,51273.8,307643,EUR,2017-12-20

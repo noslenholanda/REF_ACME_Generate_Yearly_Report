@@ -1,0 +1,3 @@
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+748442,"Various paper supplies",191035,38207,229242,CAD,2017-08-03
+244319,"Waste management services",228114,45622.8,273737,USD,2017-08-27

@@ -1,0 +1,3 @@
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+368643,"Various paper supplies",225877,45175.4,271052,CAD,2017-04-21
+554669,"Beverages and Catering",62392,12478.4,74870.4,EUR,2017-04-05

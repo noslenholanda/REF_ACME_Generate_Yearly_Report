@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+826282,"IT Support",2017-02-16,297861,59572.2,357433,EUR
+866193,"Professional Services",2017-02-18,120752,24150.4,144902,EUR
+420731,"Beverages and Catering",2017-02-25,173850,34770,208620,USD

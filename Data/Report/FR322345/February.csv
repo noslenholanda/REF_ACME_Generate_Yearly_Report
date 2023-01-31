@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+663800,"Concierge Services",2017-02-05,106736,21347.2,128083,USD
+407202,"IT Support",2017-02-17,145646,29129.2,174775,RON
+114273,"Waste management services",2017-02-06,163118,32623.6,195742,RON

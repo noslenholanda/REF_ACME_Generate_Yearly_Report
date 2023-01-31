@@ -1,0 +1,7 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+710510,"Waste management services",2017-09-14,257383,51476.6,308860,EUR
+984526,"Concierge Services",2017-09-25,55137,11027.4,66164.4,EUR
+182221,"Professional Services",2017-09-02,256225,51245,307470,RON
+902867,"Various paper supplies",2017-09-01,52722,10544.4,63266.4,USD
+799263,"IT Support",2017-09-12,192150,38430,230580,EUR
+497415,"IT Support",2017-09-22,1219,243.8,1462.8,RON

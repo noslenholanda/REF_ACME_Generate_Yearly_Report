@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+152078,"Concierge Services",2017-04-22,179561,35912.2,215473,USD
+265583,"Concierge Services",2017-04-18,125720,25144,150864,CAD
+290116,"Professional Services",2017-04-09,30117,6023.4,36140.4,RON
